@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: bhavyascaler/hello-world-flask
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 5000
+  nodePort: 31386
+
+config:
+  message: "wwwwWelcome to Argo CD!!"  # Default message for the app
+
