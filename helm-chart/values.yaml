@@ -12,5 +12,5 @@ service:
   nodePort: 31386
 
 config:
-  message: " to Argo CD!!"  # Default message for the app
+  message: " Hello to Argo CD!!"  # Default message for the app
 
